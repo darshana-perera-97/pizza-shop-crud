@@ -1,38 +1,175 @@
-.App {
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.orange-text,
+.orange-text:hover {
+  color: #fe7300;
+}
+.yellow-text,
+.yellow-text:hover {
+  color: #feae00;
+}
+
+.dark-text,
+.dark-text:hover {
+  color: #010101;
+}
+
+.dark-background {
+  background: #010101;
+}
+
+.gredient-text,
+.gredient-text:hover {
+  background-image: linear-gradient(to right, #fe7300, #feae00) !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.white-text,
+.white-text:hover {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #feae00;
+}
+
+.navbar-btn,
+.navbar-btn:active,
+.navbar-btn:hover {
+  background-color: #fe7300;
+  color: #ffffff;
+  padding: 5px;
+  width: 140px;
   text-align: center;
+  padding-bottom: 8px;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainBanner {
+  width: 90vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.features p {
+  opacity: 0.7;
+}
+
+.features b {
+  color: #fe7300;
+}
+
+.alpha-button,
+.alpha-button:hover {
+  background-color: #fe7300;
+  color: #ffffff;
+}
+
+.custom-card {
+  background: #f7f7f7;
+  margin: 0px 4% !important;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px #92909081;
+}
+
+.custom-feedbacks {
+  margin: 0px 4% !important;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px #d5d5d5b8;
+}
+
+.custom-card img {
+  height: 130px;
+  cursor: pointer;
+}
+
+.custom-card h6 {
+  font-weight: 700;
+}
+
+.custom-card p {
+  font-weight: 700;
+}
+
+.custom-card:hover {
+  border: 1px solid #feae00;
+  box-shadow: 0px 0px 25px #ffffff;
+}
+
+.TopBanner {
+  background: #010101
+}
+
+.TopBanner .main-text {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.TopBanner .main-text2 {
+  font-weight: 100;
+  font-size: 60px;
+  opacity: 0.7;
+  margin-bottom: 0px;
+}
+
+.TopBanner p {
+  font-weight: 100;
+  color: #f7f7f7a0;
+}
+
+.custom-feedbacks p {
+  color: #000000a0;
+}
+
+.custom-feedbacks button {
+  background: none;
+  border: none;
+  color: #fe7300;
+  font-size: 34px;
+}
+
+.social-media img:hover {
+  opacity: 0.5;
+  cursor: alias;
+}
+
+@media screen and (min-width: 200px) {
+  .TopBanner img, .taste img {
+    height: 320px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 350px) {
+  .TopBanner img, .taste img {
+    height: 370px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (min-width: 450px) {
+  .TopBanner img, .taste img {
+    height: 420px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .TopBanner img, .taste img {
+    height: 520px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .TopBanner img, .taste img {
+    height: 620px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .TopBanner img, .taste img {
+    height: 340px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .TopBanner img, .taste img {
+    height: 440px;
   }
 }

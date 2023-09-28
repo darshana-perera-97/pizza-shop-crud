@@ -5,19 +5,33 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function MainNavbar() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-black">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Brand href="#home" className="gredient-text">
+          React-Bootstrap
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="white-text"
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Nav className="me-auto ">
+            <Nav.Link href="#features" className="white-text">
+              Features
+            </Nav.Link>
+            <Nav.Link href="#pricing" className="white-text">
+              Pricing
+            </Nav.Link>
+            <Nav.Link href="#pricing2" className="white-text">
+              Pricing
+            </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            {/* <Nav.Link href="#deets" className="white-text">
+              More deets
+            </Nav.Link> */}
+            <Nav.Link eventKey={2} href="#memes" className="navbar-btn">
+              Get Started
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
