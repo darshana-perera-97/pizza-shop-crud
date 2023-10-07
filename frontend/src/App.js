@@ -22,7 +22,7 @@ function App() {
     //   </header>
     // </div>
     <div>
-      <Pages/>
+      <Pages />
     </div>
   );
 }

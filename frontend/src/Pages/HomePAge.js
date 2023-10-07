@@ -7,6 +7,7 @@ import TopBanner from "../Components/TopBanner";
 import Recents from "../Components/Recents";
 import CustomerFeedbacks from "../Components/CustomerFeedbacks";
 import SocialMedia from "../Components/SocialMedia";
+import ChatbotWindow from "../Components/ChatbotWindow";
 
 export default function HomePAge() {
   return (
@@ -19,6 +20,9 @@ export default function HomePAge() {
       <Recents />
       <CustomerFeedbacks />
       <SocialMedia />
+      <div className="container">
+        <ChatbotWindow />
+      </div>
     </div>
   );
 }
